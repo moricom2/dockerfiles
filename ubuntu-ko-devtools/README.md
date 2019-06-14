@@ -3,4 +3,4 @@ docker push moricom/ubuntu-ko-devtools
 docker pull moricom/ubuntu-ko-devtools
 
 # Docker in Docker
-docker run -itd -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker -v /workspace/mori:/workspace/mori --name ubuhto-ko-devtools-dind moricom/ubuntu-ko-devtools
+docker run -itd -v /var/run/docker.sock -v /usr/bin/docker --name devtools-dind moricom/ubuntu-ko-devtools

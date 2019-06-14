@@ -1,5 +1,6 @@
 FROM moricom/ubuntu-ko:latest
 RUN apt-get update && apt-get install -y \
+    curl \
     wget \
     tar \
     vim \
@@ -11,6 +12,6 @@ RUN update-alternatives --install /usr/bin/mvn mvn /usr/share/apache-maven-3.6.1
 WORKDIR /workspace
 RUN git clone https://github.com/moricom2/springboot-api-service.git
 WORKDIR ./springboot-api-service
-RUN rm -rf .git && mvn install
+RUN mvn install && mvn package && mvn clean
 WORKDIR /workspace
 RUN rm -rf *

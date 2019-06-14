@@ -1,5 +1,3 @@
 # dockerfiles
-
-https://cloud.docker.com/u/moricom/repository/docker/moricom/ubuntu-ko
-
-https://cloud.docker.com/u/moricom/repository/docker/moricom/ubuntu-ko-devtools
+https://hub.docker.com/r/moricom/ubuntu-ko
+https://hub.docker.com/r/moricom/ubuntu-ko-devtools
